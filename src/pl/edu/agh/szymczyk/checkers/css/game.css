@@ -1,0 +1,30 @@
+.board-cell {
+    -fx-background-color: blue;
+    -fx-pref-width: 100%;
+    -fx-pref-height: 100%;
+}
+
+.board-cell-dark {
+    -fx-background-color: #57aa77;
+}
+
+.board-cell-light {
+    -fx-background-color: #eaece2;
+}
+
+.board-cell-possible {
+    -fx-background-color: #296041;
+}
+
+.board-figure-current {
+    -fx-stroke: gold;
+    -fx-stroke-width: 2px;
+}
+
+.game-figure-impossible {
+    -fx-opacity: 0.2;
+}
+
+.game-active-player {
+    -fx-text-fill: gold;
+}

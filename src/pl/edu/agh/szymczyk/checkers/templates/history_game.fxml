@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="game_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="649.0" stylesheets="@../css/game.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane id="board" fx:id="board" layoutX="235.0" layoutY="14.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: white; -fx-border-color: #57aa77; -fx-border-radius: 5px;" />
+      <Pane fx:id="white_player" layoutX="15.0" layoutY="14.0" prefHeight="57.0" prefWidth="208.0" style="-fx-border-style: solid; -fx-border-radius: 5px; -fx-background-color: white; -fx-background-radius: 5px;">
+         <children>
+            <Label fx:id="white_player_name" layoutX="14.0" layoutY="17.0" maxWidth="130.0" text="Player1">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </Label>
+            <Circle fill="WHITE" layoutX="180.0" layoutY="29.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </Pane>
+      <Hyperlink layoutX="14.0" layoutY="390.0" onAction="#backToMenu" style="-fx-text-fill: black; -fx-border-color: transparent; -fx-underline: false; -fx-border-width: 0px;" text="Back to menu">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Hyperlink>
+      <Pane fx:id="black_player" layoutX="15.0" layoutY="83.0" prefHeight="57.0" prefWidth="208.0" style="-fx-border-style: solid; -fx-border-radius: 5px; -fx-background-color: white; -fx-background-radius: 5px;">
+         <children>
+            <Label fx:id="black_player_name" layoutX="14.0" layoutY="17.0" maxWidth="130.0" text="Player1">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </Label>
+            <Circle layoutX="180.0" layoutY="29.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </Pane>
+      <Button fx:id="next" layoutX="123.0" layoutY="150.0" mnemonicParsing="false" onAction="#next" prefWidth="100.0" style="-fx-background-radius: 0; -fx-border-color: black; -fx-background-color: white; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="Next">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="prev" layoutX="15.0" layoutY="150.0" mnemonicParsing="false" onAction="#prev" prefWidth="100.0" style="-fx-background-radius: 0; -fx-border-color: black; -fx-background-color: white; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="Prev">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

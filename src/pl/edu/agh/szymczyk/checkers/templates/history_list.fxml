@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.agh.szymczyk.checkers.controllers.HistoryListController">
+   <children>
+      <Label layoutX="178.0" layoutY="14.0" text="History">
+         <font>
+            <Font name="Comic Sans MS" size="41.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="14.0" layoutY="264.0" onAction="#backToMenu" style="-fx-text-fill: black; -fx-border-color: transparent; -fx-underline: false; -fx-border-width: 0px;" text="Back to menu">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Hyperlink>
+      <ListView fx:id="history_list" layoutX="15.0" layoutY="82.0" prefHeight="175.0" prefWidth="470.0" />
+   </children>
+</AnchorPane>
